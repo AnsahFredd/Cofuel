@@ -168,13 +168,13 @@
     width: 100%;
   }
   .input_container input {
-    width: 250px;
+    width: 300px;
   }
   .input_container button {
     position: absolute;
-    top: 0;
-    bottom: -14px;
-    right: 0px;
+    top: 13px;
+    bottom: 20px;
+    right: 2px;
   }
 }
 

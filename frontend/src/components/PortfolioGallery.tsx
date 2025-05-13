@@ -56,7 +56,7 @@ const PortfolioGallery = () => {
 
   return (
     <section className="px-4 py-10 bg-white min-h-screen">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+      <h2 className="text-xl lg:4xl md:text-2xl font-bold text-center text-gray-800 mb-10">
         Our Event Portfolio
       </h2>
 

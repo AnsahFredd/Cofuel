@@ -96,7 +96,6 @@ const HomePage = () => {
             Making Your Events An Occasion <br /> To Remember
           </h2>
 
-          {/* Event images with overlay */}
           <div className="event-img-container grid grid-cols-5 w-full">
             {[
               { src: event_planning, label: "Event Planning" },
@@ -106,18 +105,21 @@ const HomePage = () => {
               { src: dinner_setup, label: "Dinner Set-up" },
             ].map((item, index) => (
               <div
-                className="image__container relative h-[450px] w-full hover:scale-[1.03] cursor-pointer transition-transform duration-300 ease-in-out"
                 key={index}
+                className="image__container group relative h-[450px] w-full hover:scale-[1.03] cursor-pointer transition-transform duration-300 ease-in-out"
               >
                 <img
                   className="h-full w-full object-cover"
                   src={item.src}
                   alt={item.label}
                 />
-                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-70 backdrop-blur-sm hover:opacity-0 hover:backdrop-blur-[0px]"></div>
+
+                {/* Overlay that fades on hover of the parent */}
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-70 backdrop-blur-sm transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:backdrop-blur-0"></div>
+
                 <div className="overlap_text absolute inset-0 flex items-center justify-center">
                   <div
-                    className=" text-[#FFD700] text-[80px]  text-center flex flex-col gap-0"
+                    className="text-[#FFD700] text-[80px] text-center flex flex-col gap-0"
                     style={{ fontFamily: "'Luxurious Script', cursive" }}
                   >
                     {item.label.split(" ").map((word, i) => (
@@ -130,6 +132,7 @@ const HomePage = () => {
               </div>
             ))}
           </div>
+
           {/* Explore more button */}
           <Link
             to="/services"

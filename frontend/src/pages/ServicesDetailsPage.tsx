@@ -53,11 +53,12 @@ const EventServiceDetail = () => {
 
           <div className="w-full flex flex-col justify-center items-center mt-4 space-y-1">
             <h2
-              className="text-[#ffdf00] text-center text-6xl mb-8 services-header-text"
+              className="text-[#ffdf00] text-center text-[50px] mb-8 services-header-text"
               style={{ fontFamily: "'Luxurious Script', cursive" }}
             >
               Making Your Events An Occasion To Remember
             </h2>
+
             <div className="relative w-full h-[350px]  overflow-hidden main-img-container">
               <img
                 src={service.mainimage}
