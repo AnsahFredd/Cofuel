@@ -1,0 +1,100 @@
+.layout-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .event-planning img {
+    width: 100%;
+    height: 300px;
+  }
+  .event-planning div h1 {
+    font-size: 50px;
+  }
+
+  .event-planning div button {
+    width: 150px;
+    border-radius: 5px;
+  }
+  .event_container ul li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile: up to 767px */
+@media screen and (max-width: 767px) {
+  .event-planning img {
+    height: 240px;
+  }
+
+  .event-planning h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .event-planning button {
+    width: 140px;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  .event_container ul li {
+    font-size: 13px;
+  }
+
+  .event-planning .w-1\/4 {
+    width: 50% !important;
+  }
+}
+
+/* Tablet: 768px to 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .event-planning img {
+    height: 320px;
+  }
+
+  .event-planning h1 {
+    font-size: 52px;
+  }
+
+  .event-planning button {
+    font-size: 15px;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .event_container ul li {
+    font-size: 15px;
+  }
+
+  .event-planning .w-1\/4 {
+    width: 35% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .event-planning img {
+    height: 400px;
+  }
+
+  .event-planning h1 {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+
+  .event-planning button {
+    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .event_container ul li {
+    font-size: 16px;
+  }
+
+  .event-planning .w-1\/4 {
+    width: 25% !important;
+  }
+}

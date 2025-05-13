@@ -1,0 +1,175 @@
+@media screen and (max-width: 1024px) {
+  .service-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .service-sidebar {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .service-sidebar h1 {
+    font-size: 26px;
+  }
+
+  .service-sidebar ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    text-align: center;
+  }
+
+  .service-sidebar ul li a {
+    font-size: 16px;
+  }
+
+  .service-main {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .service-main h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .service-main p {
+    font-size: 16px;
+  }
+
+  .main-img-container {
+    height: 250px !important;
+  }
+
+  .carousel-img {
+    height: 100% !important;
+  }
+
+  .services-header-text {
+    font-size: 2.25rem !important;
+  }
+
+  .all_service_link {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: black;
+  }
+
+  .all_service_link:hover {
+    color: #989595;
+  }
+
+  .service-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+
+  .service-sidebar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-sidebar ul li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .service-sidebar ul li a:hover {
+    color: #ffdf00;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-sidebar ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .service-main h1 {
+    font-size: 22px;
+  }
+
+  .main-img-container {
+    height: 200px !important;
+  }
+
+  .carousel-img {
+    height: 100% !important;
+  }
+
+  .services-header-text {
+    font-size: 1.75rem !important;
+    text-align: center;
+  }
+
+  .service-main p {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Make sidebar full width and center its content */
+  .service-sidebar {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+  }
+
+  .service-sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .service-sidebar .all_service_link {
+    display: inline-block;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .service-sidebar .all_service_link:hover {
+    color: #989595;
+  }
+
+  .service-sidebar ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+
+  .service-sidebar ul li {
+    text-align: center;
+  }
+
+  .service-sidebar ul li a {
+    font-size: 16px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .service-sidebar ul li a:hover {
+    color: #ffdf00;
+  }
+}

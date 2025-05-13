@@ -1,0 +1,60 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > img {
+  margin-bottom: 16px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.my-masonry-grid_column > img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Override Lightbox background */
+.custom-lightbox .yarl__container {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.custom-close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #ffdf00;
+  background: none;
+  border: none;
+  z-index: 1000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.custom-close-button:hover {
+  color: #ffdd009a;
+  cursor: pointer;
+}
+
+/* Shift the lightbox down and center it in remaining space */
+.portfolio-lightbox .yarl__container {
+  top: 80px !important;
+  height: calc(100vh - 60px) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(4px);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.portfolio-lightbox .yarl__slide_image {
+  max-height: 90vh !important;
+  object-fit: contain;
+}

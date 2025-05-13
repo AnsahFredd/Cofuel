@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .quote h2 {
+    font-size: 18px;
+  }
+  .quote .quote-icon {
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: -40px;
+    width: 45px;
+  }
+  .quote p {
+    font-size: 14px;
+  }
+  .quote .testimonial_link {
+    font-size: 16px;
+  }
+  .container .icon__one {
+    position: absolute;
+    left: 9px;
+    width: 6px;
+  }
+  .container .icon__two {
+    position: absolute;
+    right: 25px;
+    width: 1px;
+  }
+}
