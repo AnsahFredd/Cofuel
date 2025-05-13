@@ -1,11 +1,14 @@
 import React from "react";
-
+import aboutus_backimg from "../assets/images/image22.jpg";
 const About = () => {
   return (
-    <div className=" flex items-center justify-center w-full h-full mt-44 mb-44">
-      <div className="">
-        <h1 className="text-6xl mb-6">About Us</h1>
-        <p className="text-2xl text-red-500">Page not available now!</p>
+    <div className="w-full h-full">
+      <div className="header-background w-full h-[450px]">
+        <img
+          src={aboutus_backimg}
+          alt=""
+          className="w-full object-cover h-full"
+        />
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Import, Phone } from "lucide-react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/images/logo.jpg";
 
 interface NavBarProps {
   backgroundColor: string;
@@ -42,8 +42,12 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
       style={backgroundColor ? { backgroundColor } : undefined}
     >
       <nav className="flex items-center justify-between mx-4 md:mx-8 lg:mx-16 relative">
-        <div>
-          <h1 className="text-white text-xl md:text-2xl">Cofuel</h1>
+        <div className="flex items-center mr-4">
+          <img
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain"
+            src={logo}
+            alt="logo image"
+          />
         </div>
 
         {/* Mobile Menu Button */}
@@ -56,7 +60,7 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
 
         {/* Desktop/Tablet Menu */}
         <ul
-          className="hidden md:flex text-white gap-8 lg:gap-24"
+          className="hidden md:flex text-white gap-8 lg:gap-16"
           style={{ fontFamily: "Catamaran, sans-serif" }}
         >
           <li>

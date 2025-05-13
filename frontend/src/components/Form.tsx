@@ -23,6 +23,7 @@ const Form = () => {
             </label>
             <input
               required
+              placeholder="example@email.com"
               type="email"
               className="w-full lg:w-[300px] p-2  border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             />
@@ -34,6 +35,7 @@ const Form = () => {
             </label>
             <input
               required
+              placeholder="Enter phone number"
               type="tel"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             />
@@ -49,27 +51,13 @@ const Form = () => {
               id=""
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option value="" disabled selected>
-                Wedding Ceremony
-              </option>
-              <option value="" disabled selected>
-                Birthday Party
-              </option>
-              <option value="" disabled selected>
-                Formal Dinner
-              </option>
-              <option value="" disabled selected>
-                Graduation Ceremony
-              </option>
-              <option value="" disabled selected>
-                Funerals
-              </option>
-              <option value="" disabled selected>
-                Cooperate Meeting
-              </option>
-              <option value="" disabled selected>
-                Other
-              </option>
+              <option value="event_type">Wedding Ceremony</option>
+              <option value="event_type">Birthday Party</option>
+              <option value="event_type">Formal Dinner</option>
+              <option value="event_type">Graduation Ceremony</option>
+              <option value="event_type">Funerals</option>
+              <option value="event_type">Cooperate Meeting</option>
+              <option value="event_type">Other</option>
             </select>
           </div>
 
@@ -90,6 +78,7 @@ const Form = () => {
             </label>
             <input
               required
+              placeholder="eg: New York"
               type="text"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             />
@@ -103,6 +92,7 @@ const Form = () => {
               required
               name=""
               id=""
+              placeholder="Send us a message"
               className="w-full lg:w-[300px] p-2 h-[160px] border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             ></textarea>
           </div>
@@ -114,6 +104,7 @@ const Form = () => {
             <input
               required
               type="text"
+              placeholder="Enter your budget"
               className="w-full lg:w-[300px] p-2  border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             />
           </div>
@@ -128,9 +119,9 @@ const Form = () => {
               id=""
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option value="">SMS</option>
-              <option value="">Voice Call</option>
-              <option value="">WhatsApp</option>
+              <option value="contact">SMS</option>
+              <option value="contact">Voice Call</option>
+              <option value="contact">WhatsApp</option>
             </select>
           </div>
         </div>

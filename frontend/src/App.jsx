@@ -1,8 +1,12 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import LoadingScreen from "./components/LoadingScreen";
+
+import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import ServicesDetailsPage from "./pages/ServicesDetailsPage";
 import Portfolio from "./pages/Portofolio";
@@ -12,6 +16,8 @@ import NotFound from "./pages/NotFound";
 function App() {
   // Get current route path
   const location = useLocation();
+
+  const [loading, setLoading] = useState(true);
 
   // Check if the current page is NotFound
   const isNotFound =
@@ -24,8 +30,22 @@ function App() {
 
   const navBg = isNotFound ? "#000000" : undefined;
 
+  useEffect(() => {
+    // Start loading when path changes
+    setLoading(true);
+
+    // Simulating network dealy or waiting for actual reosurces
+    const handleDelay = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(handleDelay);
+  }, [location]);
   return (
     <>
+      <ScrollToTop />
+      {loading && <LoadingScreen />}
+
       <NavBar backgroundColor={navBg} />
 
       <Routes>

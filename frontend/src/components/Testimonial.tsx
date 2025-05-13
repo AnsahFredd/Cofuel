@@ -48,11 +48,11 @@ const Testimonial = () => {
           {name}
         </p>
         <Link
-          to="/"
-          className="testimonial_link text-[#a38e13] text-xl font-semibold "
+          to="/about-us"
+          className="testimonial_link text-[#a38e13] text-xl font-semibold"
           style={{ fontFamily: "Catamaran, sans-serif" }}
         >
-          View All Testimonial
+          View All Testimonials
         </Link>
       </div>
 
