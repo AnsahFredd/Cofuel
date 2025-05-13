@@ -46,7 +46,6 @@ body {
   pointer-events: auto;
 }
 
-/* Lightbox slide (image) - this is interactable */
 .portfolio-lightbox .yarl__slide {
   pointer-events: all;
   z-index: 50;
@@ -79,7 +78,6 @@ body {
   color: #ffdd009a;
 }
 
-/* === Enhanced Navigation Buttons === */
 .portfolio-lightbox .yarl__button {
   color: #ffdf00 !important;
   font-size: 2.5rem !important;
@@ -107,4 +105,11 @@ body {
 
 .portfolio-lightbox .yarl__button_next {
   right: 20px !important;
+}
+
+/* Hide custom close button on mobile screens */
+@media (max-width: 640px) {
+  .custom-close-button {
+    display: none !important;
+  }
 }
