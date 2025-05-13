@@ -53,8 +53,12 @@ const EventServiceDetail = () => {
 
           <div className="w-full flex flex-col justify-center items-center mt-4 space-y-1">
             <h2
-              className="text-[#ffdf00] text-center text-[50px] mb-8 services-header-text"
-              style={{ fontFamily: "'Luxurious Script', cursive" }}
+              className="text-center text-[48px] mb-8 services-header-text"
+              style={{
+                fontFamily: "'Luxurious Script', cursive",
+                color: "#ffd700", // brighter and more saturated gold
+                textShadow: "1px 1px 3px rgba(0,0,0,0.3)", // subtle dark shadow
+              }}
             >
               Making Your Events An Occasion To Remember
             </h2>
