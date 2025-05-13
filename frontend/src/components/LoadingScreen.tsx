@@ -16,14 +16,6 @@ const LoadingScreen = () => {
             />
           </div>
         </div>
-
-        {/* Loading Text with Pulse */}
-        <p
-          className="text-yellow-400 text-lg font-semibold animate-pulse tracking-wide"
-          style={{ fontFamily: "Catamaran, sans-serif" }}
-        >
-          Loading, please wait...
-        </p>
       </div>
     </div>
   );
