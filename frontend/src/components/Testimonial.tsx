@@ -29,14 +29,28 @@ const Testimonial = () => {
           strokeWidth={0.2}
           className="quote-icon absolute h-32 w-16 mt-1 left-0 right-0 mx-auto -top-9 text-[#a38e13]"
         />
-        <h2 className="text-2xl mt-16 font-bold mb-4">{title}</h2>
-        <p className="text-gray-700 text-lg font-mono mb-4 break-words whitespace-normal">
+        <h2
+          className="text-2xl mt-16 font-bold mb-4"
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        >
+          {title}
+        </h2>
+        <p
+          className="text-gray-700 text-lg font-mono mb-4 break-words whitespace-normal"
+          style={{ fontFamily: "'Poppins', sans-serif" }}
+        >
           {message}
         </p>
-        <p className="font-semibold text-xl">{name}</p>
+        <p
+          className="font-semibold text-xl"
+          style={{ fontFamily: "Catamaran, sans-serif" }}
+        >
+          {name}
+        </p>
         <Link
           to="/"
           className="testimonial_link text-[#a38e13] text-xl font-semibold "
+          style={{ fontFamily: "Catamaran, sans-serif" }}
         >
           View All Testimonial
         </Link>

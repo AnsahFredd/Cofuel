@@ -1,3 +1,4 @@
+/* Masonry Grid Styles */
 .my-masonry-grid {
   display: flex;
   margin-left: -16px;
@@ -21,40 +22,89 @@
   cursor: pointer;
 }
 
-/* Override Lightbox background */
-.custom-lightbox .yarl__container {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+/* Allow page scroll when lightbox is open */
+body {
+  overflow: auto !important;
 }
 
+/* Lightbox container styles (don't cover background image or header) */
+.portfolio-lightbox .yarl__container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  pointer-events: none; /* Let background be interactable unless over image */
+  overflow: visible !important;
+  padding-top: 80px;
+
+  pointer-events: auto;
+}
+
+/* Lightbox slide (image) - this is interactable */
+.portfolio-lightbox .yarl__slide {
+  pointer-events: all;
+  z-index: 50;
+}
+
+/* Lightbox image appearance */
+.portfolio-lightbox .yarl__slide_image {
+  max-height: 80vh !important;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating close button */
 .custom-close-button {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+  position: fixed;
+  top: 30px;
+  right: 10px;
   font-size: 2rem;
   color: #ffdf00;
   background: none;
   border: none;
-  z-index: 1000;
+  z-index: 60 !important;
   cursor: pointer;
   transition: color 0.3s ease;
+  pointer-events: all;
 }
+
 .custom-close-button:hover {
   color: #ffdd009a;
-  cursor: pointer;
 }
 
-/* Shift the lightbox down and center it in remaining space */
-.portfolio-lightbox .yarl__container {
-  top: 80px !important;
-  height: calc(100vh - 60px) !important;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(4px);
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* === Enhanced Navigation Buttons === */
+.portfolio-lightbox .yarl__button {
+  color: #ffdf00 !important;
+  font-size: 2.5rem !important;
+  z-index: 60;
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.portfolio-lightbox .yarl__slide_image {
-  max-height: 90vh !important;
-  object-fit: contain;
+.portfolio-lightbox .yarl__button:hover {
+  background-color: rgba(255, 223, 0, 0.8) !important;
+  color: #000 !important;
+  transform: scale(1.1);
+}
+
+.portfolio-lightbox .yarl__button_prev {
+  left: 20px !important;
+}
+
+.portfolio-lightbox .yarl__button_next {
+  right: 20px !important;
 }

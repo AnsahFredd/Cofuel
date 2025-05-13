@@ -55,7 +55,10 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
         </button>
 
         {/* Desktop/Tablet Menu */}
-        <ul className="hidden md:flex text-white gap-8 lg:gap-24">
+        <ul
+          className="hidden md:flex text-white gap-8 lg:gap-24"
+          style={{ fontFamily: "Catamaran, sans-serif" }}
+        >
           <li>
             <Link to="/">HOME</Link>
           </li>
@@ -73,7 +76,10 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="absolute top-full w-full bg-[#111] p-4 md:hidden z-50 backdrop-blur-sm border-b border-neutral-700/80">
-            <ul className="text-white flex flex-col gap-4">
+            <ul
+              className="text-white flex flex-col gap-4"
+              style={{ fontFamily: "Catamaran, sans-serif" }}
+            >
               <li>
                 <Link to="/">HOME</Link>
               </li>

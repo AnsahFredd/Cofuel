@@ -92,7 +92,10 @@ const HomePage = () => {
       <main>
         {/* Event Section */}
         <div className="header flex flex-col items-center justify-center mb-12 mt-12">
-          <h2 className="text-center text-2xl mb-8 font-mono">
+          <h2
+            className="text-center text-2xl mb-8 font-mono"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          >
             Making Your Events An Occasion <br /> To Remember
           </h2>
 
@@ -137,6 +140,7 @@ const HomePage = () => {
           <Link
             to="/services"
             className="event_btn border text-center rounded-md text-shadow-gray-400 w-[250px] mt-8 p-2.5 font-medium cursor-pointer text-xl focus:ring-2 items-center hover:bg-gray-100  duration-300 hover:scale-110 hover:bg-opacity-80"
+            style={{ fontFamily: "'Poppins', serif" }}
           >
             Explore More
           </Link>
@@ -170,7 +174,10 @@ const HomePage = () => {
             </div>
 
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 backdrop-blur-sm z-0"></div>
-            <div className="core-values absolute ml-56 gap-4 bg-black text-white list-none -top-11 h-[450px] flex flex-col items-center p-9">
+            <div
+              className="core-values absolute ml-56 gap-4 bg-black text-white list-none -top-11 h-[450px] flex flex-col items-center p-9"
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
               <h2 className="text-[#FFD700] text-3xl mb-4">CORE VALUES</h2>
               <li className="text-xl">Creativity</li>
               <li className="text-xl">Excellence</li>
@@ -186,7 +193,10 @@ const HomePage = () => {
 
           {/* Mission & Vision Section */}
           <div className="mission-vission-container flex flex-col items-center justify-center">
-            <h2 className="text-2xl text-center max-w-3xl px-4 mt-16 mb-8 font-bold">
+            <h2
+              className="text-2xl text-center max-w-3xl px-4 mt-16 mb-8 font-bold"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in
             </h2>
@@ -195,7 +205,10 @@ const HomePage = () => {
                 <h2 className="text-[#FFD700] text-xl mb-2 font-extrabold">
                   OUR MISSION
                 </h2>
-                <p className="mb-4 text-lg font-semibold">
+                <p
+                  className="mb-4 text-lg font-semibold"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
                   Our mission is to bring our client vision to life by providing
                   exceptional events plan and decoration services that exceed
                   expectation, ensuring every detail is meticulously executed
@@ -231,7 +244,10 @@ const HomePage = () => {
                 <h2 className="text-[#FFD700] text-xl mb-2 font-extrabold">
                   OUR VISSION
                 </h2>
-                <p className="mb-4 text-lg font-semibold">
+                <p
+                  className="mb-4 text-lg font-semibold"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
                   To create unforgettable experience by transforming spaces into
                   captivating and enchanting environments that have a lasting
                   impression.
