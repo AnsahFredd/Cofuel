@@ -3,6 +3,7 @@ import servicesData from "../constants/servicesData";
 import ServicesHeader from "../components/ServicesHeader";
 import eventbackimag from "../assets/images/image13.jpg";
 import { useEffect, useState } from "react";
+import { ArrowLeft } from "lucide-react";
 import NotFound from "../pages/NotFound";
 import "../styles/ServicesDetails.css";
 
@@ -32,7 +33,10 @@ const EventServiceDetail = () => {
         {/* Sidebar 30% */}
         <aside className="w-1/3 p-6 service-sidebar">
           <h1 className="text-2xl font-bold mb-4">Services</h1>
-          <Link className="all_service_link" to="/services">
+          <Link
+            className="all_service_link hover:underline hover:text-[#4d4c4ce0]"
+            to="/services"
+          >
             All Services
           </Link>
 
