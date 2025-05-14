@@ -19,5 +19,6 @@
   }
   .service__container div img {
     width: 100%;
+    height: inherit;
   }
 }
