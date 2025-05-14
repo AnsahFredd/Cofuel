@@ -6,6 +6,7 @@ interface Props {
   subtitle?: string;
   color: string;
   backgroundImage?: string;
+  height?: string;
 }
 
 const ServiceHeader: React.FC<Props> = ({
@@ -13,20 +14,26 @@ const ServiceHeader: React.FC<Props> = ({
   subtitle,
   color,
   backgroundImage,
+  height = "450px",
 }) => {
   return (
     <div className="header-background relative bg-cover bg-no-repeat h-full">
-      <div className="relative w-full h-[450px] ">
+      <div className="relative w-full" style={{ height }}>
         <img
           src={backgroundImage || service_backimg}
           alt=""
           className="object-cover w-full h-full"
         />
-        <div className="absolute top-0 left-0 h-[450px] w-full bg-black opacity-60 backdrop-blur-sm z-0"></div>
+        <div
+          className="absolute top-0 left-0  w-full bg-black opacity-60 backdrop-blur-sm z-0"
+          style={{ height }}
+        ></div>
       </div>
 
       <div className="title-container absolute inset-0 flex flex-col items-center justify-center text-center space-y-2 px-4">
-        <h1 className={`${color} lg:text-6xl md:text-5xl text-3xl font-bold`}>
+        <h1
+          className={`${color} lg:text-6xl md:text-5xl text-3xl font-bold text-center`}
+        >
           {title}
         </h1>
         {subtitle && (

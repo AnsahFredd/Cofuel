@@ -60,7 +60,7 @@ const PortfolioGallery = () => {
         className="text-4xl   font-bold text-center text-gray-800 mb-10"
         style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
-        Our Event Portfolio
+        Cofuel Home Of Events
       </h2>
 
       <Masonry

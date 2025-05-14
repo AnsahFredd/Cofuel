@@ -23,9 +23,10 @@ const EventServiceDetail = () => {
   return (
     <div className="flex flex-col">
       <ServicesHeader
-        title="Event Planning"
+        title={service.title}
         color="text-white"
         backgroundImage={eventbackimag}
+        height="300px"
       />
       <div className="flex min-h-screen service-container">
         {/* Sidebar 30% */}
@@ -56,21 +57,12 @@ const EventServiceDetail = () => {
               className="text-center text-[48px] mb-8 services-header-text"
               style={{
                 fontFamily: "'Luxurious Script', cursive",
-                color: "#ffd700", // brighter and more saturated gold
-                textShadow: "1px 1px 3px rgba(0,0,0,0.3)", // subtle dark shadow
+                color: "#ffd700",
+                textShadow: "1px 1px 3px rgba(0,0,0,0.3)",
               }}
             >
               Making Your Events An Occasion To Remember
             </h2>
-
-            <div className="relative w-full h-[350px]  overflow-hidden main-img-container">
-              <img
-                src={service.mainimage}
-                alt={service.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
-            </div>
           </div>
           <div className="relative w-full h-[400px] my-8 overflow-hidden">
             <img

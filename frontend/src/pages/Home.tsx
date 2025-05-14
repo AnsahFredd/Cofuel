@@ -104,8 +104,8 @@ const HomePage = () => {
               { src: event_planning, label: "Event Planning" },
               { src: flower, label: "Dowry Wrapping" },
               { src: event_styling, label: "Event Styling" },
-              { src: total_decor, label: "Total Decor" },
-              { src: dinner_setup, label: "Dinner Set-up" },
+              { src: total_decor, label: "Culinery" },
+              { src: dinner_setup, label: "Floral bouquet " },
             ].map((item, index) => (
               <div
                 key={index}

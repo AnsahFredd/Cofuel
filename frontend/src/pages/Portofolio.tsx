@@ -9,7 +9,7 @@ const Portofolio = () => {
         <img
           src={portfolioBackground}
           alt=""
-          className="w-full h-[450px] object-cover"
+          className="w-full h-[400px] object-cover"
         />
       </div>
       <PortfolioGallery />

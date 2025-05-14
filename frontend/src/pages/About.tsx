@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus_backimg from "../assets/images/image22.jpg";
+import aboutus_backimg from "../assets/images/image21.jpg";
 const About = () => {
   return (
     <div className="w-full h-full">
