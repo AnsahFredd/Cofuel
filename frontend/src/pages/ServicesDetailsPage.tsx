@@ -74,7 +74,6 @@ const EventServiceDetail = () => {
               alt="Carousel"
               className="w-full h-full object-cover transition-all duration-700 carousel-img"
             />
-            <div className="absolute w-full h-[400px] inset-0 bg-black opacity-50 "></div>
           </div>
         </main>
       </div>
