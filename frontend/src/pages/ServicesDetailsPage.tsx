@@ -54,7 +54,7 @@ const EventServiceDetail = () => {
         {/* Main content 70% */}
         <main className="w-2/3 p-6 service-main">
           <h1 className="text-3xl font-bold mb-4">{service.title}</h1>
-          <p className="mb-4">{service.services}</p>
+          <p className="mb-4">{service.description}</p>
 
           <div className="w-full flex flex-col justify-center items-center mt-4 space-y-1">
             <h2

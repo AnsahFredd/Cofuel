@@ -20,7 +20,6 @@ const About = () => {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-        {/* Centered Text */}
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 animate-fade-in">
             What We Do
@@ -34,7 +33,7 @@ const About = () => {
       <div className="py-16 space-y-16">
         <div className="max-w-5xl mx-auto space-y-32">
           {/* About Us */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 space-x-16">
             <div className="order-1 flex flex-col items-center justify-center md:order-1">
               <h2
                 className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
@@ -43,11 +42,16 @@ const About = () => {
                 About Us
               </h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                praesentium voluptatibus excepturi impedit, obcaecati
-                exercitationem nemo aperiam consequatur id accusantium
-                architecto ratione voluptate ad voluptates odit sed, illum
-                quibusdam quidem!
+                Cofuel Home of Events is a creative event planning and
+                decoration company based in Ghana, dedicated to making every
+                celebration unforgettable. With a youthful and passionate
+                team,headed by Coffie Samuel Amanor Tettey ( C.E.O / founder),
+                we deliver excellence, elegance, and a personal touch in
+                everything we do Our goal is not just to plan events but to
+                create lasting memories that reflect your unique story. Every
+                project we take on supports a bigger dream, thus funding the
+                future Cofuel Medical Laboratory Centre. At Cofuel, every
+                celebration has a purpose, and we serve to your satisfaction.
               </p>{" "}
             </div>
             <div className="order-2 md:order-2">
@@ -56,7 +60,7 @@ const About = () => {
           </div>
 
           {/* Our Story */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 space-x-16">
             <div className="order-2 md:order-1">
               <img src={vission_image} alt="" />
             </div>
@@ -68,11 +72,19 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                praesentium voluptatibus excepturi impedit, obcaecati
-                exercitationem nemo aperiam consequatur id accusantium
-                architecto ratione voluptate ad voluptates odit sed, illum
-                quibusdam quidem!
+                Cofuel Home of Events began as a simple passion,a young dreamer
+                with a love for beauty and creativity. What started with
+                decorating my primary school classroom for "Our day" with paper
+                cratf then to decorating the basic school assembly hall for
+                "carols day celebration" with fabrics quickly grew into
+                something greater: a company committed to excellence, culture,
+                and lasting memories. With limited resources but an unlimited
+                vision, we stepped out in faith turning ideas into real
+                experiences and transforming empty spaces into vibrant, joyful
+                atmospheres. Every service we offer from planning to décor,
+                makeup to catering is inspired by the desire to make people feel
+                special and valued. More than just a business, Cofuel is a
+                purpose-driven brand with you in mind.
               </p>
             </div>
           </div>

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { toast, Toaster } from "react-hot-toast";
 
 const Form = () => {
+  const [successMessage, setSuccessMessage] = useState("");
+
   const [formDate, setFormDate] = useState({
     name: "",
     email: "",
@@ -26,7 +29,20 @@ const Form = () => {
     e.preventDefault();
     console.log(formDate);
 
-    alert("Form submitted successfully");
+    toast.success("Form submitted successfully", {
+      duration: 5000,
+      style: {
+        border: "1px solid #a38e13",
+        padding: "12px",
+        color: "#a38e13",
+        fontSize: "16px",
+        borderRadius: "10px",
+      },
+      iconTheme: {
+        primary: "#a38e13",
+        secondary: "#FFFAEE",
+      },
+    });
     setFormDate({
       name: "",
       email: "",
@@ -41,6 +57,7 @@ const Form = () => {
   };
   return (
     <div className="p-4">
+      <Toaster position="top-right" reverseOrder={false} />
       <form onSubmit={handleSubmit} className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
