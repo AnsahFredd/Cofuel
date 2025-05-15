@@ -100,11 +100,14 @@ const Form = () => {
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
               <option value="event_type">Wedding Ceremony</option>
-              <option value="event_type">Birthday Party</option>
+              <option value="event_type">Birthday Parties</option>
               <option value="event_type">Formal Dinner</option>
-              <option value="event_type">Graduation Ceremony</option>
+              <option value="event_type">Graduations</option>
               <option value="event_type">Funerals</option>
+              <option value="event_type">Baby Outdooring</option>
               <option value="event_type">Cooperate Meeting</option>
+              <option value="event_type">Cooperate Meeting</option>
+              <option value="event_type">Trade Fairs & Exhibition</option>
               <option value="event_type">Other</option>
             </select>
           </div>

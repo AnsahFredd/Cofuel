@@ -30,7 +30,7 @@ const servicesData = [
     title: "Dowry Wrapping",
     slug: "dowry-wrapping",
     mainimage: dowry_wrapping,
-    services: [
+    description: [
       "Venue Decoration: Transform your wedding venue into a magical space with bespoke decorations tailored to your theme. From elegant drapery to stunning backdrops, we ensure every detail enhances the beauty of your special day.",
       "Floral Arrangements: Create breathtaking ﬂoral designs using high-quality artiﬁcial ﬂowers. Our arrangements include bouquets, centerpieces, and ceremony decor that add a touch of elegance and romance.",
       "Lighting Design: Set the perfect mood with innovative lighting solutions. We offer a variety of options, including fairy lights, chandeliers, and uplighting, to create a captivating ambiance.",
@@ -41,7 +41,7 @@ const servicesData = [
     title: "Dinner Set-up",
     slug: "dinner-set-up",
     mainimage: dinner_setup,
-    services: [
+    description: [
       "Venue Decoration: Transform your wedding venue into a magical space with bespoke decorations tailored to your theme.",
       "Floral Arrangements: Breathtaking designs with high-quality artificial flowers.",
       "Lighting Design: Fairy lights, chandeliers, uplighting and more.",
@@ -52,7 +52,7 @@ const servicesData = [
     title: "Ballor decor",
     slug: "ballon-decor",
     mainimage: ballons,
-    services: [
+    description: [
       "Venue Decoration: Elegant drapery, backdrops and creative centerpieces.",
       "Floral Arrangements: Adds a romantic, timeless touch to your event.",
       "Lighting Design: Enhances ambience with beautiful lighting systems.",
@@ -63,7 +63,7 @@ const servicesData = [
     title: "Backdrop Setting",
     slug: "backdrop-setting",
     mainimage: dinner_table,
-    services: [
+    description: [
       "Venue Decoration: Customized to your dream look and feel.",
       "Floral Arrangements: Color-coordinated floral elegance.",
       "Lighting Design: Modern, soft, and thematic lighting effects.",
@@ -74,7 +74,7 @@ const servicesData = [
     title: "Lighting",
     slug: "lighting",
     mainimage: purple_ballons,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -85,7 +85,7 @@ const servicesData = [
     title: "Event Planning & coordination",
     slug: "event_planning",
     mainimage: ballons,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -96,7 +96,7 @@ const servicesData = [
     title: "Event Styling & decoration",
     slug: "event-styling",
     mainimage: room_with_flowers,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -107,7 +107,7 @@ const servicesData = [
     title: "Make-up",
     slug: "make-up",
     mainimage: room_with_flowers,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -118,7 +118,7 @@ const servicesData = [
     title: "Floral design and arrangement",
     slug: "floral-design",
     mainimage: room_with_flowers,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -129,7 +129,7 @@ const servicesData = [
     title: "Facinator and bridal fans",
     slug: "facinator-bridal-fans",
     mainimage: room_with_flowers,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",
@@ -140,7 +140,7 @@ const servicesData = [
     title: "Catering",
     slug: "catering",
     mainimage: room_with_flowers,
-    services: [
+    description: [
       "Venue Decoration: Celebrate in vibrant style.",
       "Floral Arrangements: Soft and radiant artificial blooms.",
       "Lighting Design: Creates perfect mood lighting for memories.",

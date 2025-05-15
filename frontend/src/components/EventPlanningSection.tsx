@@ -37,7 +37,7 @@ const EventPlanningSection = () => {
           </section>
 
           <ul className="mt-5 space-y-1.5 mx-5">
-            {item.services.map((service, idx) => (
+            {item.description.map((service, idx) => (
               <li key={idx}>{service}</li>
             ))}
           </ul>

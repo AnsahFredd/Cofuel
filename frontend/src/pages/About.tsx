@@ -31,7 +31,53 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-16 space-y-14">
+      <div className="py-16 space-y-16">
+        <div className="max-w-5xl mx-auto space-y-32">
+          {/* About Us */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="order-1 flex flex-col items-center justify-center md:order-1">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              >
+                About Us
+              </h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                praesentium voluptatibus excepturi impedit, obcaecati
+                exercitationem nemo aperiam consequatur id accusantium
+                architecto ratione voluptate ad voluptates odit sed, illum
+                quibusdam quidem!
+              </p>{" "}
+            </div>
+            <div className="order-2 md:order-2">
+              <img src={white_purple_ballons} alt="" />
+            </div>
+          </div>
+
+          {/* Our Story */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="order-2 md:order-1">
+              <img src={vission_image} alt="" />
+            </div>
+            <div className="order-1 flex flex-col items-center justify-center md:order-2">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              >
+                Our Story
+              </h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                praesentium voluptatibus excepturi impedit, obcaecati
+                exercitationem nemo aperiam consequatur id accusantium
+                architecto ratione voluptate ad voluptates odit sed, illum
+                quibusdam quidem!
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Mission and Vission */}
         <section
           id="mission-vission"
@@ -79,7 +125,10 @@ const About = () => {
         {/* Testimnonial Section */}
         <section id="all_testimonials" className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex flex-col items-center justify-center mb-8 gap-3">
-            <h1 className="text-4xl font-bold text-center text-[#a38e13]">
+            <h1
+              className="text-4xl font-bold text-center text-[#a38e13]"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
               Testimonials
             </h1>
             <p className="text-2xl">
@@ -104,6 +153,49 @@ const About = () => {
             ))}
           </div>
         </section>
+
+        <div className="px-4 md:px-8 py-10 bg-white rounded-2xl shadow-lg">
+          <h2
+            className="text-3xl md:text-4xl font-bold text-[#a38e13] mb-6 text-center"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          >
+            Why Choose Cofuel — Home of Events?
+          </h2>
+
+          <ul
+            className="space-y-4 text-gray-700 text-lg leading-relaxed"
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
+            <li>
+              <span className="font-semibold text-[#a38e13]">Creativity</span> —
+              We value innovative thinking and strive to bring fresh,
+              imaginative ideas to every event we design.
+            </li>
+            <li>
+              <span className="font-semibold text-[#a38e13]">Excellence</span> —
+              We are committed to delivering exceptional quality in every aspect
+              of our work, ensuring flawless event execution.
+            </li>
+            <li>
+              <span className="font-semibold text-[#a38e13]">
+                Collaboration
+              </span>{" "}
+              — We believe in the power of collaboration, working closely with
+              our clients to bring their vision to life.
+            </li>
+            <li>
+              <span className="font-semibold text-[#a38e13]">Integrity</span> —
+              We uphold the highest ethical standards, treating our clients,
+              partners, and team members with honesty, transparency, and
+              respect.
+            </li>
+            <li>
+              <span className="font-semibold text-[#a38e13]">Passion</span> — We
+              are passionate about what we do, infusing enthusiasm and
+              dedication into every event we plan and decorate.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
