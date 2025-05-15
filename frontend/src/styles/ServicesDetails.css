@@ -121,10 +121,9 @@
   }
   .all_service_link {
     position: absolute;
-    bottom: 0px;
-    top: 230px;
+    bottom: 120px;
+    top: 305px;
     left: 0;
     right: 0;
-    z-index: 50;
   }
 }

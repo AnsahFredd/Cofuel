@@ -1,16 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Form = () => {
+  const [formDate, setFormDate] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    eventType: "Wedding Ceremony",
+    eventDate: "",
+    eventLocation: "",
+    message: "",
+    budget: "",
+    contactMethod: "SMS",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormDate((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formDate);
+
+    alert("Form submitted successfully");
+    setFormDate({
+      name: "",
+      email: "",
+      phone: "",
+      eventType: "Wedding Ceremony",
+      eventDate: "",
+      eventLocation: "",
+      message: "",
+      budget: "",
+      contactMethod: "SMS",
+    });
+  };
   return (
     <div className="p-4">
-      <form action="" className="max-w-[1200px] mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
             <label htmlFor="name" className="mr-auto mb-2">
               Full Name
             </label>
             <input
+              name="name"
+              value={formDate.name}
               required
+              onChange={handleChange}
               type="text"
               placeholder="Enter your full name"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
@@ -22,7 +63,10 @@ const Form = () => {
               Email
             </label>
             <input
+              name="email"
+              value={formDate.email}
               required
+              onChange={handleChange}
               placeholder="example@email.com"
               type="email"
               className="w-full lg:w-[300px] p-2  border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
@@ -34,7 +78,10 @@ const Form = () => {
               Phone Number
             </label>
             <input
+              name="phone"
+              value={formDate.phone}
               required
+              onChange={handleChange}
               placeholder="Enter phone number"
               type="tel"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
@@ -47,8 +94,9 @@ const Form = () => {
             </label>
             <select
               required
-              name=""
-              id=""
+              name="eventType"
+              onChange={handleChange}
+              value={formDate.eventType}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
               <option value="event_type">Wedding Ceremony</option>
@@ -66,7 +114,10 @@ const Form = () => {
               Event Date
             </label>
             <input
+              name="eventDate"
+              value={formDate.eventDate}
               required
+              onChange={handleChange}
               type="date"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             />
@@ -77,7 +128,10 @@ const Form = () => {
               Event Location
             </label>
             <input
+              name="eventLocation"
+              value={formDate.eventLocation}
               required
+              onChange={handleChange}
               placeholder="eg: New York"
               type="text"
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
@@ -89,9 +143,10 @@ const Form = () => {
               Message
             </label>
             <textarea
+              value={formDate.message}
               required
-              name=""
-              id=""
+              onChange={handleChange}
+              name="message"
               placeholder="Send us a message"
               className="w-full lg:w-[300px] p-2 h-[160px] border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             ></textarea>
@@ -102,7 +157,10 @@ const Form = () => {
               Budget
             </label>
             <input
+              name="budget"
+              value={formDate.budget}
               required
+              onChange={handleChange}
               type="text"
               placeholder="Enter your budget"
               className="w-full lg:w-[300px] p-2  border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
@@ -115,8 +173,9 @@ const Form = () => {
             </label>
             <select
               required
-              name=""
-              id=""
+              name="contactMethod"
+              value={formDate.contactMethod}
+              onChange={handleChange}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
               <option value="contact">SMS</option>

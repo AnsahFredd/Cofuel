@@ -32,66 +32,52 @@ const About = () => {
       </div>
 
       <div className="py-16 space-y-14">
-        {/* Mission & Vision Section */}
-        <section className="mission-vission-container flex flex-col items-center justify-center">
+        {/* Mission and Vission */}
+        <section
+          id="mission-vission"
+          className="bg-[#f8f4e3] py-12 px-6 md:px-16"
+        >
           <h2
-            className="text-4xl font-bold text-center text-[#a38e13]"
+            className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            Mission And Vission
+            Our Mission & Vision
           </h2>
-          <div className="mission flex  items-center justify-evenly mx-8 gap-8 mt-8">
-            <div className="mv-content text-center">
-              <h2 className="text-[#FFD700] text-xl mb-2 font-extrabold">
-                OUR MISSION
-              </h2>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Mission */}
+            <div className="bg-white/90 backdrop-blur-md border border-[#e0d9b6] p-6 rounded-xl shadow-lg text-center">
+              <h3 className="text-[#FFD700] text-xl font-extrabold mb-3">
+                Mission
+              </h3>
               <p
-                className="mb-4 text-lg font-semibold"
+                className="text-gray-800 text-base font-medium leading-relaxed"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                Our mission is to bring our client vision to life by providing
-                exceptional events plan and decoration services that exceed
-                expectation, ensuring every detail is meticulously executed with
-                creativity, professionalism, and a touch of beauty.
+                Bringing our clients' visions to life through exceptional event
+                planning and decoration that exceed expectations. Every detail
+                is handled with creativity, care, and elegance.
               </p>
             </div>
-            <div className="mv__image w-full">
-              <img
-                src={white_purple_ballons}
-                alt="white_purple_ballons"
-                className="object-cover w-full h-[400px] rounded-lg"
-              />
-            </div>
-          </div>
 
-          {/* Vission */}
-          <div className="vission flex items-center justify-evenly mx-8 gap-8 mt-24">
-            <div className="mv__image w-full ">
-              <img
-                src={vission_image}
-                alt="room_with_flowers"
-                className="object-cover w-full h-[400px] rounded-lg"
-              />
-            </div>
-
-            <div className="mv-content w-full text-center">
-              <h2 className="text-[#FFD700] text-xl mb-2 font-extrabold">
-                OUR VISSION
-              </h2>
+            {/* Vision */}
+            <div className="bg-white/90 backdrop-blur-md border border-[#e0d9b6] p-6 rounded-xl shadow-lg text-center">
+              <h3 className="text-[#FFD700] text-xl font-extrabold mb-3">
+                Vision
+              </h3>
               <p
-                className="mb-4 text-lg font-semibold"
+                className="text-gray-800 text-base font-medium leading-relaxed"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                To create unforgettable experience by transforming spaces into
-                captivating and enchanting environments that have a lasting
-                impression.
+                To transform ordinary spaces into captivating experiences that
+                leave lasting impressions and unforgettable memories.
               </p>
             </div>
           </div>
         </section>
 
         {/* Testimnonial Section */}
-        <section className="max-w-7xl mx-auto px-4 py-10">
+        <section id="all_testimonials" className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex flex-col items-center justify-center mb-8 gap-3">
             <h1 className="text-4xl font-bold text-center text-[#a38e13]">
               Testimonials

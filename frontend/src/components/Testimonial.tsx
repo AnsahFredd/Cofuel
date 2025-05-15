@@ -2,80 +2,73 @@ import React, { useEffect, useState } from "react";
 import { MoveLeft, MoveRight, QuoteIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Testimonials } from "../constants/testimonials";
-import "./Testimonial.css";
 
 const Testimonial = () => {
-  const [current, setCurrent] = useState(0);
+  const displayedTestimonials = Testimonials.slice(0, 3); // ✅ only first 3
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const total = displayedTestimonials.length;
 
-  const next = () => setCurrent((prev) => (prev + 1) % Testimonials.length);
-  const previous = () =>
-    setCurrent(
-      (prev) => (prev - 1 + Testimonials.length) % Testimonials.length
-    );
+  const next = () => setCurrentIndex((prev) => (prev + 1) % total);
+
+  const previous = () => setCurrentIndex((prev) => (prev - 1 + total) % total);
 
   useEffect(() => {
-    const timer = setInterval(next, 10000);
+    const timer = setInterval(next, 10000); // ⏱ auto-rotate every 10s
     return () => clearInterval(timer);
   }, []);
 
-  const { name, role, message } = Testimonials[current];
+  const testimonial = displayedTestimonials[currentIndex];
 
   return (
-    <div className="testimonial_container w-full max-w-5xl mx-auto flex items-center justify-center mb-4 bg-gradient-to-r from-[#D9D9D9D9] to-[#73737373] h-[300px] shadow-lg rounded-lg py-16 px-6 relative">
-      <div className="quote text-center max-w-2xl w-full">
-        <QuoteIcon
-          size={32}
-          strokeWidth={0.2}
-          className="quote-icon absolute h-32 w-16 mt-1 left-0 right-0 mx-auto -top-9 text-[#a38e13]"
-        />
-        <h1
-          className="absolute bottom-0 top-[70px] left-0 right-0 text-3xl"
+    <div className="w-full max-w-4xl mx-auto my-12 px-4">
+      <div className="bg-[#d9d9d9] relative rounded-2xl shadow-md py-10 px-6 text-center">
+        <QuoteIcon size={40} className="text-[#a38e13] mb-4 mx-auto" />
+        <h2
+          className="text-2xl font-medium mb-1"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           What Our Clients Are Saying
-        </h1>
-        <div>
-          <h2
-            className="text-2xl mt-20 mb-2"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            {name}
-          </h2>
-          <p
-            className="text-gray-700 text-[16px] mb-4 break-words whitespace-normal"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
-          >
-            {message}
-          </p>
-          <p
-            className="role text-lg"
-            style={{ fontFamily: "Catamaran, sans-serif" }}
-          >
-            {role}
-          </p>
-          <Link
-            to="/about-us"
-            className="testimonial_link text-[#a38e13] text-xl cursor-pointer mt-12"
-            style={{ fontFamily: "Catamaran, sans-serif" }}
-          >
-            View All Testimonials
-          </Link>
-        </div>
+        </h2>
+        <p
+          className="text-lg italic"
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        >
+          {testimonial.name}
+        </p>
+        <p
+          className="text-gray-700 mt-4 text-base leading-relaxed"
+          style={{ fontFamily: "'Poppins', sans-serif" }}
+        >
+          {testimonial.message}
+        </p>
+        <p
+          className="mt-4 font-semibold"
+          style={{ fontFamily: "'Catamaran', sans-serif" }}
+        >
+          {testimonial.role}
+        </p>
+        <Link
+          to="/about-us#all_testimonials"
+          className="block mt-2 text-[#a38e13] font-medium"
+          style={{ fontFamily: "'Catamaran', sans-serif" }}
+        >
+          View All Testimonials
+        </Link>
+
+        {/* Arrows */}
+        <button
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#a38e13]"
+          onClick={previous}
+        >
+          <MoveLeft />
+        </button>
+        <button
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#a38e13]"
+          onClick={next}
+        >
+          <MoveRight />
+        </button>
       </div>
-
-      <button
-        className="icon__one absolute left-12 top-1/2 transform -translate-1/2 animate-pulse text-[#a38e13]"
-        onClick={previous}
-      >
-        <MoveLeft className="cursor-pointer" />
-      </button>
-
-      <button
-        className="icon__two absolute right-12 top-1/2 transform -translate-1/2 animate-pulse text-[#a38e13]"
-        onClick={next}
-      >
-        <MoveRight className="cursor-pointer" />
-      </button>
     </div>
   );
 };

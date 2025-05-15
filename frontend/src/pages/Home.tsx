@@ -214,7 +214,7 @@ const HomePage = () => {
                   with creativity, professionalism, and a touch of beauty.
                 </p>
                 <Link
-                  to="/about-us"
+                  to="/about-us#mission-vission"
                   className="btn border py-3 px-8 bg-black text-white rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-opacity-80 hover:bg-[#111111f3]"
                 >
                   About Us
@@ -252,7 +252,7 @@ const HomePage = () => {
                   impression.
                 </p>
                 <Link
-                  to="/about-us"
+                  to="/about-us#mission-vission"
                   className="btn border py-3 px-8 bg-black text-white rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-opacity-80 hover:bg-[#111111f3]"
                 >
                   About us

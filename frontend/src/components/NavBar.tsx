@@ -44,7 +44,7 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
       <nav className="flex items-center justify-between mx-4 md:mx-8 lg:mx-16 relative">
         <div className="flex items-center mr-4">
           <img
-            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain"
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain"
             src={logo}
             alt="logo image"
           />
@@ -52,10 +52,10 @@ const NavBar: React.FC<NavBarProps> = ({ backgroundColor }) => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-[#FFD700]"
+          className="md:hidden text-[#FFD700] cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
 
         {/* Desktop/Tablet Menu */}
