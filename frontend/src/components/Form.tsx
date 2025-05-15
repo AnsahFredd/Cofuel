@@ -4,7 +4,7 @@ import { toast, Toaster } from "react-hot-toast";
 const Form = () => {
   const [successMessage, setSuccessMessage] = useState("");
 
-  const [formDate, setFormDate] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -22,12 +22,12 @@ const Form = () => {
     >
   ) => {
     const { name, value } = e.target;
-    setFormDate((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formDate);
+    console.log(formData);
 
     toast.success("Form submitted successfully", {
       duration: 5000,
@@ -43,7 +43,7 @@ const Form = () => {
         secondary: "#FFFAEE",
       },
     });
-    setFormDate({
+    setFormData({
       name: "",
       email: "",
       phone: "",
@@ -66,7 +66,7 @@ const Form = () => {
             </label>
             <input
               name="name"
-              value={formDate.name}
+              value={formData.name}
               required
               onChange={handleChange}
               type="text"
@@ -81,7 +81,7 @@ const Form = () => {
             </label>
             <input
               name="email"
-              value={formDate.email}
+              value={formData.email}
               required
               onChange={handleChange}
               placeholder="example@email.com"
@@ -96,7 +96,7 @@ const Form = () => {
             </label>
             <input
               name="phone"
-              value={formDate.phone}
+              value={formData.phone}
               required
               onChange={handleChange}
               placeholder="Enter phone number"
@@ -113,19 +113,19 @@ const Form = () => {
               required
               name="eventType"
               onChange={handleChange}
-              value={formDate.eventType}
+              value={formData.eventType}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option value="event_type">Wedding Ceremony</option>
-              <option value="event_type">Birthday Parties</option>
-              <option value="event_type">Formal Dinner</option>
-              <option value="event_type">Graduations</option>
-              <option value="event_type">Funerals</option>
-              <option value="event_type">Baby Outdooring</option>
-              <option value="event_type">Cooperate Meeting</option>
-              <option value="event_type">Cooperate Meeting</option>
-              <option value="event_type">Trade Fairs & Exhibition</option>
-              <option value="event_type">Other</option>
+              <option>Wedding Ceremony</option>
+              <option>Birthday Parties</option>
+              <option>Formal Dinner</option>
+              <option>Graduations</option>
+              <option>Funerals</option>
+              <option>Baby Outdooring</option>
+              <option>Cooperate Meeting</option>
+              <option>Cooperate Meeting</option>
+              <option>Trade Fairs & Exhibition</option>
+              <option>Other</option>
             </select>
           </div>
 
@@ -135,7 +135,7 @@ const Form = () => {
             </label>
             <input
               name="eventDate"
-              value={formDate.eventDate}
+              value={formData.eventDate}
               required
               onChange={handleChange}
               type="date"
@@ -149,7 +149,7 @@ const Form = () => {
             </label>
             <input
               name="eventLocation"
-              value={formDate.eventLocation}
+              value={formData.eventLocation}
               required
               onChange={handleChange}
               placeholder="eg: New York"
@@ -163,7 +163,7 @@ const Form = () => {
               Message
             </label>
             <textarea
-              value={formDate.message}
+              value={formData.message}
               required
               onChange={handleChange}
               name="message"
@@ -178,7 +178,7 @@ const Form = () => {
             </label>
             <input
               name="budget"
-              value={formDate.budget}
+              value={formData.budget}
               required
               onChange={handleChange}
               type="text"
@@ -194,13 +194,13 @@ const Form = () => {
             <select
               required
               name="contactMethod"
-              value={formDate.contactMethod}
+              value={formData.contactMethod}
               onChange={handleChange}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option value="contact">SMS</option>
-              <option value="contact">Voice Call</option>
-              <option value="contact">WhatsApp</option>
+              <option>SMS</option>
+              <option>Voice Call</option>
+              <option>WhatsApp</option>
             </select>
           </div>
         </div>
