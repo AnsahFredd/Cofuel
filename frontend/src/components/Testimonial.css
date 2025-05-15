@@ -1,39 +1,54 @@
 @media screen and (max-width: 767px) {
-  .container {
+  .testimonial_container {
+    position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 36rem;
   }
-  .quote {
+  .testimonial_container .quote {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    margin-bottom: 1rem;
+    max-width: 30rem;
+  }
+  .quote h1 {
+    position: absolute;
+    bottom: 0;
+    top: 40px;
   }
   .quote h2 {
     font-size: 18px;
   }
+  .quote div {
+  }
   .quote .quote-icon {
     margin-bottom: 0.5rem;
     position: absolute;
-    top: -40px;
+    top: -60px;
     width: 45px;
   }
-  .quote p {
+  .quote div p {
     font-size: 14px;
   }
-  .quote .testimonial_link {
+  .quote div .role {
     font-size: 16px;
   }
-  .container .icon__one {
-    position: absolute;
-    left: 9px;
-    width: 6px;
+  .quote div .testimonial_link {
+    font-size: 18px;
   }
-  .container .icon__two {
+  .quote div .testimonial_link:hover {
+    color: #fff;
+  }
+  .testimonial_container .icon__one {
     position: absolute;
-    right: 25px;
-    width: 1px;
+    left: 24px;
+  }
+  .testimonial_container .icon__two {
+    position: absolute;
+    right: 10px;
   }
 }

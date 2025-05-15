@@ -1,26 +1,38 @@
 export const Testimonials = [
   {
-    name: "Sammy",
-    title: "What Our Clients Are Saying",
+    name: "Nana Oduro",
+    role: "Full Stack Developer",
     message:
-      "Working with COFUEL EVENTS was a breeze. Their team perfectly captured the essence of our brand and created an elegant and professional atmosphere for our product launch. We received numerous compliments from our guests and partners. We will deﬁnitely be using their services again.",
+      "Skilled, detail-oriented developer with strong React skills and great collaboration—highly recommend working with him.",
   },
   {
-    name: "Frederick",
-    title: "What Our Clients Are Saying",
+    name: "Samuel Cofuel",
+    role: "Full Stack Developer",
     message:
-      "Working with COFUEL EVENTS was a breeze. Their team perfectly captured the essence of our brand and created an elegant and professional atmosphere for our product launch. We received numerous compliments from our guests and partners. We will deﬁnitely be using their services again.",
+      "Always delivers designs with pixel-perfect accuracy. Working with him is seamless.",
   },
   {
-    name: "Oduro",
-    title: "What Our Clients Are Saying",
+    name: "Ansah Frederick Owusu",
+    role: "Full Stack Developer",
     message:
-      "Working with COFUEL EVENTS was a breeze. Their team perfectly captured the essence of our brand and created an elegant and professional atmosphere for our product launch. We received numerous compliments from our guests and partners. We will deﬁnitely be using their services again.",
+      "He understands complex APIs and integrates them beautifully. Great attention to detail.",
   },
   {
-    name: "Emmanuel",
-    title: "What Our Clients Are Saying",
+    name: "Emmanuel Siaw",
+    role: "Full Stack Developer",
     message:
-      "Working with COFUEL EVENTS was a breeze. Their team perfectly captured the essence of our brand and created an elegant and professional atmosphere for our product launch. We received numerous compliments from our guests and partners. We will deﬁnitely be using their services again.",
+      "Communicative, efficient, and committed to deadlines. A top team player.",
+  },
+  {
+    name: "Albert Bediako",
+    role: "Full Stack Developer",
+    message:
+      "Knows how to optimize applications and keep them running smoothly. Highly technical.",
+  },
+  {
+    name: "Samuel Abbey",
+    role: "Full Stack Developer",
+    message:
+      "Worked with him on several mobile projects—his frontend skills are unmatched.",
   },
 ];

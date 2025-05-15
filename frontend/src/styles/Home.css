@@ -16,14 +16,14 @@
     left: 60px;
     right: 0;
     bottom: 0;
-    font-size: 70px;
+    font-size: 60px;
   }
   .header-content h1 span {
     position: absolute;
-    font-size: 70px;
-    left: 180px;
+    font-size: 60px;
+    left: 210px;
     right: 0px;
-    top: 310px;
+    top: 312px;
     text-align: center;
   }
   .header-content .button__container .button {

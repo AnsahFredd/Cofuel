@@ -1,6 +1,5 @@
 import flower from "../assets/images/flower.png";
 import vission_image from "../assets/images/image6.jpg";
-import room_with_flowers from "../assets/images/room-with-flowers.png";
 import dinner_table from "../assets/images/contact-backimg.png";
 import white_purple_ballons from "../assets/images/white-purple-balloons.png";
 import header_image_1 from "../assets/images/image1.jpg";
@@ -71,10 +70,10 @@ const HomePage = () => {
           >
             COFUEL
             <span
-              className="absolute top-[300px] right-[450px] text-[100px] bottom-0"
+              className="absolute top-[300px] right-[200px] text-[100px] bottom-0"
               style={{ fontFamily: "'Luxurious Script', cursive" }}
             >
-              Events
+              Home Of Events
             </span>
           </h1>
 

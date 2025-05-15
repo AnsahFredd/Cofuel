@@ -4,7 +4,7 @@ import room_with_flowers from "../assets/images/room-with-flowers2.png";
 import purple_ballons from "../assets/images/white-purple-balloons.png";
 import dinner_table from "../assets/images/contact-backimg.png";
 import ballons from "../assets/images/beautiful-ball.png";
-import dowty_wrapping from "../assets/images/ourservices.png";
+import dowry_wrapping from "../assets/images/ourservices.png";
 import dinner_setup from "../assets/images/image14.jpg";
 import image_2 from "../assets/images/image2.jpg";
 import image_3 from "../assets/images/image3.jpg";
@@ -29,7 +29,7 @@ const servicesData = [
   {
     title: "Dowry Wrapping",
     slug: "dowry-wrapping",
-    mainimage: dowty_wrapping,
+    mainimage: dowry_wrapping,
     services: [
       "Venue Decoration: Transform your wedding venue into a magical space with bespoke decorations tailored to your theme. From elegant drapery to stunning backdrops, we ensure every detail enhances the beauty of your special day.",
       "Floral Arrangements: Create breathtaking ﬂoral designs using high-quality artiﬁcial ﬂowers. Our arrangements include bouquets, centerpieces, and ceremony decor that add a touch of elegance and romance.",
@@ -49,7 +49,7 @@ const servicesData = [
     images: [image16, image18, image_5],
   },
   {
-    title: "Ballon Decor",
+    title: "Ballor decor",
     slug: "ballon-decor",
     mainimage: ballons,
     services: [
@@ -71,8 +71,8 @@ const servicesData = [
     images: [image17, image_8, image_9],
   },
   {
-    title: "Make-up",
-    slug: "make-up",
+    title: "Lighting",
+    slug: "lighting",
     mainimage: purple_ballons,
     services: [
       "Venue Decoration: Celebrate in vibrant style.",
@@ -82,8 +82,8 @@ const servicesData = [
     images: [image18, image_10, image_12],
   },
   {
-    title: "Make-up",
-    slug: "make-up",
+    title: "Event Planning & coordination",
+    slug: "event_planning",
     mainimage: ballons,
     services: [
       "Venue Decoration: Celebrate in vibrant style.",
@@ -93,8 +93,8 @@ const servicesData = [
     images: [room_with_flowers, image_12, image_13],
   },
   {
-    title: "Make-up",
-    slug: "make-up",
+    title: "Event Styling & decoration",
+    slug: "event-styling",
     mainimage: room_with_flowers,
     services: [
       "Venue Decoration: Celebrate in vibrant style.",
@@ -106,6 +106,39 @@ const servicesData = [
   {
     title: "Make-up",
     slug: "make-up",
+    mainimage: room_with_flowers,
+    services: [
+      "Venue Decoration: Celebrate in vibrant style.",
+      "Floral Arrangements: Soft and radiant artificial blooms.",
+      "Lighting Design: Creates perfect mood lighting for memories.",
+    ],
+    images: [image_4, ballons, catering_buffet],
+  },
+  {
+    title: "Floral design and arrangement",
+    slug: "floral-design",
+    mainimage: room_with_flowers,
+    services: [
+      "Venue Decoration: Celebrate in vibrant style.",
+      "Floral Arrangements: Soft and radiant artificial blooms.",
+      "Lighting Design: Creates perfect mood lighting for memories.",
+    ],
+    images: [image_4, ballons, catering_buffet],
+  },
+  {
+    title: "Facinator and bridal fans",
+    slug: "facinator-bridal-fans",
+    mainimage: room_with_flowers,
+    services: [
+      "Venue Decoration: Celebrate in vibrant style.",
+      "Floral Arrangements: Soft and radiant artificial blooms.",
+      "Lighting Design: Creates perfect mood lighting for memories.",
+    ],
+    images: [image_4, ballons, catering_buffet],
+  },
+  {
+    title: "Catering",
+    slug: "catering",
     mainimage: room_with_flowers,
     services: [
       "Venue Decoration: Celebrate in vibrant style.",
