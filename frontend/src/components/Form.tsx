@@ -116,16 +116,17 @@ const Form = () => {
               value={formData.eventType}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option>Wedding Ceremony</option>
-              <option>Birthday Parties</option>
-              <option>Formal Dinner</option>
-              <option>Graduations</option>
-              <option>Funerals</option>
-              <option>Baby Outdooring</option>
-              <option>Cooperate Meeting</option>
-              <option>Cooperate Meeting</option>
-              <option>Trade Fairs & Exhibition</option>
-              <option>Other</option>
+              <option value="Wedding Ceremony">Wedding Ceremony</option>
+              <option value="Birthday Parties">Birthday Parties</option>
+              <option value="Formal Dinner">Formal Dinner</option>
+              <option value="Graduations">Graduations</option>
+              <option value="Funerals">Funerals</option>
+              <option value="Baby Outdooring">Baby Outdooring</option>
+              <option value="Cooperate Meeting">Cooperate Meeting</option>
+              <option value="Trade Fairs & Exhibition">
+                Trade Fairs & Exhibition
+              </option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
@@ -198,9 +199,9 @@ const Form = () => {
               onChange={handleChange}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
-              <option>SMS</option>
-              <option>Voice Call</option>
-              <option>WhatsApp</option>
+              <option value="SMS">SMS</option>
+              <option value="Voice Call">Voice Call</option>
+              <option value="WhatsApp">WhatsApp</option>
             </select>
           </div>
         </div>
