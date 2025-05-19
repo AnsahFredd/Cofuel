@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-black text-white w-full p-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
         {/* Left Section */}
         <div className="flex items-center gap-6">
           <div className="w-1 h-32 rotate-12 bg-white" />
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="text-center md:text-left space-y-3">
+        <div className="text-center lg:text-left space-y-3">
           <Link
             to="/contact"
             className="block text-lg font-medium hover:text-[#FFD700] transition"
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media */}
-        <div className="text-center md:text-left">
+        <div className="text-center lg:text-left">
           <p className="text-lg font-medium mb-2">Follow Us</p>
           <div className="flex gap-4 text-xl">
             <a

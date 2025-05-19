@@ -57,7 +57,7 @@ const PortfolioGallery = () => {
   return (
     <section className="px-4 py-10 bg-white min-h-screen">
       <h2
-        className="text-4xl   font-bold text-center text-gray-800 mb-10"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10"
         style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         Cofuel Home Of Events

@@ -6,7 +6,7 @@ import "./EventPlaning.css";
 const EventPlanningSection = () => {
   const displayedServices = servicesData.slice(0, 5);
   return (
-    <div className="event_container mt-16 space-y-16 mb-16 ayout-container">
+    <div className="event_container mt-16 space-y-16 mb-16 layout-container">
       {displayedServices.map((item, index) => (
         <div key={index}>
           <section className="event-planning group relative w-full h-[350px] overflow-hidden hover:cursor-pointer">
@@ -38,7 +38,9 @@ const EventPlanningSection = () => {
 
           <ul className="mt-5 space-y-1.5 mx-5">
             {item.description.map((service, idx) => (
-              <li key={idx}>{service}</li>
+              <li className="text-xl" key={idx}>
+                {service}
+              </li>
             ))}
           </ul>
         </div>

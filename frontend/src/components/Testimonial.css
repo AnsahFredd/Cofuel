@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 36rem;
+    width: fit-content;
   }
   .testimonial_container .quote {
     position: relative;
@@ -13,42 +13,85 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    max-width: 30rem;
   }
-  .quote h1 {
-    position: absolute;
-    bottom: 0;
-    top: 40px;
+  .quote h3 {
+    font-size: 20px;
   }
-  .quote h2 {
-    font-size: 18px;
+  .quote .message {
+    font-size: 14px;
+    padding: 0 40px;
   }
-  .quote div {
-  }
-  .quote .quote-icon {
-    margin-bottom: 0.5rem;
-    position: absolute;
-    top: -60px;
-    width: 45px;
-  }
-  .quote div p {
+  .quote .role {
     font-size: 14px;
   }
-  .quote div .role {
-    font-size: 16px;
-  }
-  .quote div .testimonial_link {
+
+  .quote .testimonial_link {
     font-size: 18px;
   }
-  .quote div .testimonial_link:hover {
-    color: #fff;
+  .quote .testimonial_link:hover {
+    color: #a38d138f;
   }
-  .testimonial_container .icon__one {
+  .quote button .icon__one {
     position: absolute;
-    left: 24px;
+    left: -5px;
+    right: 0;
+    top: 8px;
+    bottom: 0;
   }
-  .testimonial_container .icon__two {
+  .quote button .icon__two {
     position: absolute;
-    right: 10px;
+    top: 8px;
+    right: 0;
+    left: -20px;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonial_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+  }
+  .testimonial_container .quote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .quote h3 {
+    font-size: 22px;
+  }
+  .quote .message {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+  .quote .role {
+    font-size: 16px;
+  }
+
+  .quote .testimonial_link {
+    font-size: 18px;
+  }
+  .quote .testimonial_link:hover {
+    color: #a38d138f;
+  }
+  .quote button .icon__one {
+    position: absolute;
+    left: -5px;
+    right: 0;
+    top: 8px;
+    bottom: 0;
+  }
+  .quote button .icon__two {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: -20px;
+    bottom: 0;
   }
 }

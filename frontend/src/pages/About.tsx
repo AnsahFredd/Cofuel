@@ -2,7 +2,6 @@ import React from "react";
 import aboutus_backimg from "../assets/images/image22.jpg";
 import { QuoteIcon, Quote } from "lucide-react";
 import { Testimonials } from "../constants/testimonials";
-import { Link } from "react-router-dom";
 import white_purple_ballons from "../assets/images/white-purple-balloons.png";
 import vission_image from "../assets/images/image6.jpg";
 
@@ -33,15 +32,15 @@ const About = () => {
       <div className="py-16 space-y-16">
         <div className="max-w-5xl mx-auto space-y-32">
           {/* About Us */}
-          <div className="grid md:grid-cols-2 gap-8 space-x-16">
-            <div className="order-1 flex flex-col items-center justify-center md:order-1">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center">
+            <div className="px-4 text-center">
               <h2
                 className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 About Us
               </h2>
-              <p className="text-center">
+              <p>
                 Cofuel Home of Events is a creative event planning and
                 decoration company based in Ghana, dedicated to making every
                 celebration unforgettable. With a youthful and passionate
@@ -54,24 +53,25 @@ const About = () => {
                 celebration has a purpose, and we serve to your satisfaction.
               </p>{" "}
             </div>
-            <div className="order-2 md:order-2">
-              <img src={white_purple_ballons} alt="" />
+            <div>
+              <img
+                src={white_purple_ballons}
+                alt="About Us"
+                className="w-full rounded-sm"
+              />
             </div>
           </div>
 
           {/* Our Story */}
-          <div className="grid md:grid-cols-2 gap-8 space-x-16">
-            <div className="order-2 md:order-1">
-              <img src={vission_image} alt="" />
-            </div>
-            <div className="order-1 flex flex-col items-center justify-center md:order-2">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center">
+            <div className="px-4 text-center lg:order-2">
               <h2
                 className="text-3xl md:text-4xl font-bold text-center text-[#a38e13] mb-10"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Our Story
               </h2>
-              <p className="text-center">
+              <p>
                 Cofuel Home of Events began as a simple passion,a young dreamer
                 with a love for beauty and creativity. What started with
                 decorating my primary school classroom for "Our day" with paper
@@ -86,6 +86,13 @@ const About = () => {
                 special and valued. More than just a business, Cofuel is a
                 purpose-driven brand with you in mind.
               </p>
+            </div>
+            <div className="lg:order-1">
+              <img
+                src={vission_image}
+                alt="Our Story"
+                className="w-full rounded-sm"
+              />
             </div>
           </div>
         </div>
@@ -102,7 +109,7 @@ const About = () => {
             Our Mission & Vision
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Mission */}
             <div className="bg-white/90 backdrop-blur-md border border-[#e0d9b6] p-6 rounded-xl shadow-lg text-center">
               <h3 className="text-[#FFD700] text-xl font-extrabold mb-3">
@@ -148,7 +155,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 ">
+          <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-6 ">
             {Testimonials.map(({ name, role, message }, idx) => (
               <div
                 key={idx}

@@ -64,18 +64,23 @@ const HomePage = () => {
         </div>
 
         <>
-          <h1
-            className="absolute top-[10px] left-0 right-0 bottom-0 flex justify-center items-center text-[100px] text-[#FFD700]"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            COFUEL
-            <span
-              className="absolute top-[300px] right-[200px] text-[100px] bottom-0"
-              style={{ fontFamily: "'Luxurious Script', cursive" }}
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
+            <h1
+              className="text-[#FFD700] text-[60px] md:text-[80px] lg:text-[100px] leading-0"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              COFUEL
+            </h1>
+            <p
+              className="text-[#FFD700] text-[60px] md:text-[80px] lg:text-[100px] mt-2 md:mt-4"
+              style={{
+                fontFamily: "'Luxurious Script', cursive",
+                alignSelf: "center",
+              }}
             >
               Home Of Events
-            </span>
-          </h1>
+            </p>
+          </div>
 
           <div className="button__container absolute left-0 right-0 bottom-[140px] flex justify-center items-center">
             <Link
@@ -92,7 +97,7 @@ const HomePage = () => {
         {/* Event Section */}
         <div className="header flex flex-col items-center justify-center mb-12 mt-12">
           <h2
-            className="text-center text-2xl mb-8 font-mono"
+            className="text-center text-3xl mb-8 font-mono"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Making Your Events An Occasion <br /> To Remember
@@ -174,7 +179,7 @@ const HomePage = () => {
 
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 backdrop-blur-sm z-0"></div>
             <div
-              className="core-values absolute ml-56 gap-4 bg-black text-white list-none -top-11 h-[450px] flex flex-col items-center p-9"
+              className="core-values absolute w-[326px] ml-56 gap-4 bg-black text-white list-none -top-10 h-[450px] flex flex-col items-center p-9"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               <h2 className="text-[#FFD700] text-3xl mb-4">CORE VALUES</h2>
