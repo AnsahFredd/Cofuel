@@ -7,8 +7,8 @@ import vission_image from "../assets/images/image6.jpg";
 
 const About = () => {
   return (
-    <div className="w-full h-[400px]">
-      <div className="header-background w-full h-ful relative overflow-hidden">
+    <div className="w-full h-full">
+      <div className="header-background w-full h-[400px] relative overflow-hidden">
         {/* Background Image */}
         <img
           src={aboutus_backimg}
