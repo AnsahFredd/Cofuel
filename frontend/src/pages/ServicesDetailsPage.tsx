@@ -33,14 +33,26 @@ const EventServiceDetail = () => {
         {/* Sidebar 30% */}
         <aside className="w-1/3 p-6 service-sidebar">
           <h1 className="text-2xl font-bold mb-4">Services</h1>
+
+          {/* For Mobile & Tablet Screens */}
+
           <Link
-            className="all_service_link hover:underline hover:text-[#4d4c4ce0]"
             to="/services"
+            className="all_service_link block lg:hidden text-sm font-semibold text-[#a38e13] border border-[#a38e13] px-4 py-0.5 rounded-full hover:bg-[#a38e13] hover:text-white transition-colors duration-300"
+          >
+            ← Back to All Services
+          </Link>
+
+          {/* For Large Screens and Above */}
+
+          <Link
+            to="/services"
+            className="all_service_link hidden lg:block all_service_link hover:underline hover:text-[#4d4c4ce0]"
           >
             All Services
           </Link>
 
-          <ul className="space-y-2">
+          <ul className="services_link">
             {servicesData.map((s) => (
               <li key={s.slug}>
                 <a href={`/services/${s.slug}`} className="hover:underline">
@@ -68,7 +80,7 @@ const EventServiceDetail = () => {
               Making Your Events An Occasion To Remember
             </h2>
           </div>
-          <div className="relative w-full h-[400px] my-8 overflow-hidden">
+          <div className="relative w-full h-[450px] my-8 overflow-hidden">
             <img
               src={service.images[index]}
               alt="Carousel"

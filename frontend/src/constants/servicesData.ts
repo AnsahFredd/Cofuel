@@ -1,8 +1,8 @@
 import modern_restaurant from "../assets/images/modern-restaurant-table.png";
 import catering_buffet from "../assets/images/catering-buffet-food.png";
 import room_with_flowers from "../assets/images/room-with-flowers2.png";
-import purple_ballons from "../assets/images/white-purple-balloons.png";
-import dinner_table from "../assets/images/contact-backimg.png";
+// import purple_ballons from "../assets/images/white-purple-balloons.png";
+// import dinner_table from "../assets/images/contact-backimg.png";
 import ballons from "../assets/images/beautiful-ball.png";
 import dowry_wrapping from "../assets/images/ourservices.png";
 import dinner_setup from "../assets/images/image14.jpg";
@@ -24,6 +24,10 @@ import image17 from "../assets/images/image17.jpg";
 import image18 from "../assets/images/image18.jpg";
 import image19 from "../assets/images/image19.jpg";
 import image20 from "../assets/images/image20.jpg";
+// import eventstyling1 from "../assets/images/eventstyling1.jpg";
+// import eventyling2 from "../assets/images/eventstyling2.jpg";
+// import eventstyling3 from "../assets/images/eventstyling3.jpg";
+// import eventstyling4 from "../assets/images/eventstyling4.jpg";
 
 const servicesData = [
   {

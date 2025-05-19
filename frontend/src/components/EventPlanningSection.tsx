@@ -9,7 +9,7 @@ const EventPlanningSection = () => {
     <div className="event_container mt-16 space-y-16 mb-16 layout-container">
       {displayedServices.map((item, index) => (
         <div key={index}>
-          <section className="event-planning group relative w-full h-[350px] overflow-hidden hover:cursor-pointer">
+          <section className="event-planning group relative w-full h-[400px] overflow-hidden hover:cursor-pointer">
             <img
               src={item.mainimage}
               alt={item.title}
@@ -17,7 +17,7 @@ const EventPlanningSection = () => {
             />
 
             {/* Overlay fades away on hover */}
-            <div className="absolute inset-0 bg-black opacity-60 group-hover:opacity-30 transition-opacity duration-300 backdrop-blur-sm z-0"></div>
+            <div className="absolute inset-0 bg-black h-[400px] opacity-60 group-hover:opacity-30 transition-opacity duration-300 backdrop-blur-sm z-0"></div>
 
             {/* Content stays visible */}
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-1 h-full text-center text-[#FFDF00]">

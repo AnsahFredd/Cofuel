@@ -8,9 +8,6 @@
 
 /* Mobile responsiveness */
 @media screen and (max-width: 767px) {
-  .event-planning img {
-    height: 240px;
-  }
   .event-planning h1 {
     font-size: 46px;
     line-height: 1.2;
