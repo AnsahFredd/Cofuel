@@ -7,8 +7,8 @@ import vission_image from "../assets/images/image6.jpg";
 
 const About = () => {
   return (
-    <div className="w-full h-full">
-      <div className="header-background w-full h-[400px] relative overflow-hidden">
+    <div className="w-full h-[400px]">
+      <div className="header-background w-full h-ful relative overflow-hidden">
         {/* Background Image */}
         <img
           src={aboutus_backimg}
@@ -17,7 +17,7 @@ const About = () => {
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="absolute inset-0 bg-black h-[400px] opacity-50 z-10"></div>
 
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 animate-fade-in">
