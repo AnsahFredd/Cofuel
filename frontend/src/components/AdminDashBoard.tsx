@@ -31,6 +31,8 @@ const AdminDashboard = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
 
@@ -43,7 +45,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/events", {
+        const response = await axios.get(`${apiUrl}/events`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -89,7 +91,7 @@ const AdminDashboard = () => {
   const updateStatus = async (id: string, status: string) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/events/${id}/status`,
+        `${apiUrl}/events/${id}/status`,
         { status },
         {
           headers: {
