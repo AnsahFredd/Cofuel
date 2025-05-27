@@ -1,16 +1,21 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
+import { Navigate } from "react-router-dom";
 
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import ServicesDetailsPage from "./pages/ServicesDetailsPage";
 import Portfolio from "./pages/Portofolio";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
+import Login from "./pages/Login";
+import PrivateRoute from "./components/PrivateRoute";
+
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -56,6 +61,15 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio_gallery" element={<Portfolio />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute>
+              <Admin />
+            </PrivateRoute>
+          }
+        />
       </Routes>
 
       <Footer />

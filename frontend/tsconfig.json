@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["react", "react-dom", "node"],
     "moduleResolution": "node",
     "module": "CommonJS",
     "target": "ES2020",

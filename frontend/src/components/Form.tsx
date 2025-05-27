@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import axios from "axios";
 
 const Form = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -8,12 +9,12 @@ const Form = () => {
     name: "",
     email: "",
     phone: "",
-    eventType: "Wedding Ceremony",
-    eventDate: "",
-    eventLocation: "",
+    eventType: "",
+    date: "",
+    location: "",
     message: "",
     budget: "",
-    contactMethod: "SMS",
+    contactMethod: "",
   });
 
   const handleChange = (
@@ -25,35 +26,52 @@ const Form = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    try {
+      console.log({
+        ...formData,
+        date: new Date(formData.date).toISOString(),
+      });
 
-    toast.success("Form submitted successfully", {
-      duration: 5000,
-      style: {
-        border: "1px solid #a38e13",
-        padding: "12px",
-        color: "#a38e13",
-        fontSize: "16px",
-        borderRadius: "10px",
-      },
-      iconTheme: {
-        primary: "#a38e13",
-        secondary: "#FFFAEE",
-      },
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      eventType: "Wedding Ceremony",
-      eventDate: "",
-      eventLocation: "",
-      message: "",
-      budget: "",
-      contactMethod: "SMS",
-    });
+      await axios.post("http://localhost:5000/api/events", {
+        ...formData,
+        date: new Date(formData.date).toISOString(),
+      });
+
+      toast.success("Form submitted successfully", {
+        duration: 5000,
+        style: {
+          border: "1px solid #a38e13",
+          padding: "12px",
+          color: "#a38e13",
+          fontSize: "16px",
+          borderRadius: "10px",
+        },
+        iconTheme: {
+          primary: "#a38e13",
+          secondary: "#FFFAEE",
+        },
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        eventType: "",
+        date: "",
+        location: "",
+        message: "",
+        budget: "",
+        contactMethod: "",
+      });
+    } catch (error: any) {
+      console.log("Error submiting from - frontend", error);
+      const message =
+        error.response?.data?.error ||
+        "Something went wrong. Please try again.";
+      toast.error(message);
+    }
   };
   return (
     <div className="p-4">
@@ -76,7 +94,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="email" className="mr-auto mb-2">
               Email
             </label>
             <input
@@ -91,7 +109,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="phone" className="mr-auto mb-2">
               Phone Number
             </label>
             <input
@@ -106,7 +124,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="eventType" className="mr-auto mb-2">
               Event Type
             </label>
             <select
@@ -116,6 +134,9 @@ const Form = () => {
               value={formData.eventType}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
+              <option value="" disabled>
+                Select an event type
+              </option>
               <option value="Wedding Ceremony">Wedding Ceremony</option>
               <option value="Birthday Parties">Birthday Parties</option>
               <option value="Formal Dinner">Formal Dinner</option>
@@ -131,12 +152,12 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="date" className="mr-auto mb-2">
               Event Date
             </label>
             <input
-              name="eventDate"
-              value={formData.eventDate}
+              name="date"
+              value={formData.date}
               required
               onChange={handleChange}
               type="date"
@@ -145,12 +166,12 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="location" className="mr-auto mb-2">
               Event Location
             </label>
             <input
-              name="eventLocation"
-              value={formData.eventLocation}
+              name="location"
+              value={formData.location}
               required
               onChange={handleChange}
               placeholder="eg: New York"
@@ -160,7 +181,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col md:col-span-2 lg:col-span-1">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="message" className="mr-auto mb-2">
               Message
             </label>
             <textarea
@@ -174,7 +195,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="budget" className="mr-auto mb-2">
               Budget
             </label>
             <input
@@ -189,7 +210,7 @@ const Form = () => {
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mr-auto mb-2">
+            <label htmlFor="contactMethod" className="mr-auto mb-2">
               Preferred Contact Method
             </label>
             <select
@@ -199,6 +220,9 @@ const Form = () => {
               onChange={handleChange}
               className="w-full lg:w-[300px] p-2 border rounded-[6px] focus:border-0 focus:outline-0 focus:ring-2 focus:ring-yellow-500"
             >
+              <option value="" disabled>
+                Select contact method
+              </option>
               <option value="SMS">SMS</option>
               <option value="Voice Call">Voice Call</option>
               <option value="WhatsApp">WhatsApp</option>
