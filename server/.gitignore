@@ -1,0 +1,38 @@
+# Node modules folder
+node_modules/
+
+# Environment variables file
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Build output
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+
+# Misc
+*.pid
+*.seed
+*.tgz
+
+# IDE or editor folders/files (add your editor specifics if needed)
+.vscode/
+.idea/
