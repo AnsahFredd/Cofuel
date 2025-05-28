@@ -34,7 +34,7 @@ const HomePage = () => {
 
   return (
     <div className="home__container w-full h-full">
-      <div className="header-background header-content  w-full h-[642px] relative overflow-hidden">
+      <div className="header-background header-content  w-full h-[500px] md:h-[642px] relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.img
             key={images[current]}
@@ -45,7 +45,7 @@ const HomePage = () => {
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             onAnimationComplete={() => setShowContent(true)}
-            className="w-full h-[642px] object-cover absolute top-0 left-0"
+            className="w-full h-[500px] md:h-[642px] object-cover absolute top-0 left-0"
           />
         </AnimatePresence>
 
@@ -64,7 +64,7 @@ const HomePage = () => {
         </div>
 
         <>
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
+          <div className="headerTitle absolute inset-0 flex flex-col justify-center items-center text-center z-10">
             <h1
               className="text-[#FFD700] text-[60px] md:text-[80px] lg:text-[100px] leading-0"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
