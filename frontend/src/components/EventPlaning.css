@@ -8,6 +8,12 @@
 
 /* Mobile responsiveness */
 @media screen and (max-width: 767px) {
+  .event-planning {
+    height: 300px !important;
+  }
+  .event-planning > div.absolute.inset-0.bg-black {
+    height: 300px !important;
+  }
   .event-planning h1 {
     font-size: 46px;
     line-height: 1.2;

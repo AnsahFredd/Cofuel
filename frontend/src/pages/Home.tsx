@@ -82,7 +82,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="button__container absolute left-0 right-0 bottom-[140px] flex justify-center items-center">
+          <div className="button__container absolute left-0 right-0 bottom-[140px] flex justify-center items-center z-20">
             <Link
               className="button bg-[#111] w-[192px] h-[55px] text-center rounded-sm text-2xl text-white border-0 p-2 hover:bg-[#111111f3] transition-transform duration-300 hover:scale-105 hover:bg-opacity-80"
               to="/contact"
