@@ -20,6 +20,12 @@ import image12 from "../assets/images/image12.jpg";
 import image13 from "../assets/images/image13.jpg";
 import image14 from "../assets/images/image14.jpg";
 import image15 from "../assets/images/white-purple-balloons.png";
+import image16 from "../assets/images/image16.jpg";
+import image17 from "../assets/images/image17.jpg";
+import image18 from "../assets/images/image18.jpg";
+import image19 from "../assets/images/image19.jpg";
+
+import image21 from "../assets/images/image21.jpg";
 
 const images = [
   image1,
@@ -37,6 +43,11 @@ const images = [
   image13,
   image14,
   image15,
+  image16,
+  image17,
+
+  image19,
+  image21,
 ];
 
 const slides = images.map((src, index) => ({
@@ -58,7 +69,11 @@ const PortfolioGallery = () => {
     <section className="px-4 py-10 bg-white min-h-screen">
       <h2
         className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{
+          fontFamily: "'Luxurious Script', cursive",
+          color: "#ffd700",
+          textShadow: "1px 1px 3px rgba(0,0,0,0.3)",
+        }}
       >
         Cofuel Home Of Events
       </h2>

@@ -113,7 +113,7 @@ const HomePage = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="image__container group relative h-[450px] w-full hover:scale-[1.03] cursor-pointer transition-transform duration-300 ease-in-out"
+                className="image__container group relative h-[200px] md:h-[450px] w-full hover:scale-[1.03] cursor-pointer transition-transform duration-300 ease-in-out"
               >
                 <img
                   className="h-full w-full object-cover"
@@ -122,7 +122,7 @@ const HomePage = () => {
                 />
 
                 {/* Overlay that fades on hover of the parent */}
-                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-70 backdrop-blur-sm transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:backdrop-blur-0"></div>
+                <div className="absolute  inset-0 bottom-0 bg-black opacity-70 backdrop-blur-sm transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:backdrop-blur-0"></div>
 
                 <div className="overlap_text absolute inset-0 flex items-center justify-center">
                   <div
@@ -210,13 +210,12 @@ const HomePage = () => {
                   OUR MISSION
                 </h2>
                 <p
-                  className="mb-4 text-lg font-semibold"
+                  className="text-gray-800 text-base mb-4 font-medium leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  Our mission is to bring our client vision to life by providing
-                  exceptional events plan and decoration services that exceed
-                  expectation, ensuring every detail is meticulously executed
-                  with creativity, professionalism, and a touch of beauty.
+                  Bringing our clients' visions to life through exceptional
+                  event planning and decoration that exceed expectations. Every
+                  detail is handled with creativity, care, and elegance.
                 </p>
                 <Link
                   to="/about-us#mission-vission"
@@ -249,12 +248,11 @@ const HomePage = () => {
                   OUR VISSION
                 </h2>
                 <p
-                  className="mb-4 text-lg font-semibold"
+                  className="text-gray-800 text-base font-medium mb-4 leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
-                  To create unforgettable experience by transforming spaces into
-                  captivating and enchanting environments that have a lasting
-                  impression.
+                  To transform ordinary spaces into captivating experiences that
+                  leave lasting impressions and unforgettable memories.
                 </p>
                 <Link
                   to="/about-us#mission-vission"

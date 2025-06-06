@@ -14,7 +14,7 @@ const Contact = () => {
           className="object-cover w-full h-[450px]"
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-70 backdrop-blur-sm z-0"></div>
-        <div className="contact-header-text absolute left-0 right-0 top-35 bottom-0 flex flex-col justify-self-center items-center z-10 text-white">
+        <div className="contact-header-text absolute left-0 right-0 top-48 bottom-0 text-center flex flex-col justify-self-center items-center z-10 text-white">
           <h1 className="text-4xl  font-mono mb-2">Contact Information</h1>
           <p className="text-2xl">Get in touch with us</p>
         </div>

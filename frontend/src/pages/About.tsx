@@ -53,7 +53,7 @@ const About = () => {
                 celebration has a purpose, and we serve to your satisfaction.
               </p>{" "}
             </div>
-            <div>
+            <div className="mx-4">
               <img
                 src={white_purple_ballons}
                 alt="About Us"
@@ -87,11 +87,11 @@ const About = () => {
                 purpose-driven brand with you in mind.
               </p>
             </div>
-            <div className="lg:order-1">
+            <div className="lg:order-1 mx-4">
               <img
                 src={vission_image}
                 alt="Our Story"
-                className="w-full rounded-sm"
+                className="w-full rounded-sm "
               />
             </div>
           </div>
@@ -150,7 +150,7 @@ const About = () => {
             >
               Testimonials
             </h1>
-            <p className="text-2xl">
+            <p className="text-lg md:text-xl lg:text-2xl ">
               What our clients have to say about working with us
             </p>
           </div>
@@ -175,14 +175,14 @@ const About = () => {
 
         <div className="px-4 md:px-8 py-10 bg-white rounded-2xl shadow-lg">
           <h2
-            className="text-3xl md:text-4xl font-bold text-[#a38e13] mb-6 text-center"
+            className="text-2xl md:text-3xl font-bold text-[#a38e13] mb-6 text-center"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Why Choose Cofuel — Home of Events?
           </h2>
 
           <ul
-            className="space-y-4 text-gray-700 text-lg leading-relaxed"
+            className="space-y-4 text-gray-700 text-sm md:text-lg leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             <li>

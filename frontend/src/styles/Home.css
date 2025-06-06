@@ -41,16 +41,13 @@
     align-items: center;
   }
 
-  .event-img-container .image__container img {
-    width: 100%;
-    height: inherit;
-  }
   .event-img-container .image__container .overlap_text div {
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
+    text-align: center;
     justify-content: center;
   }
   .event-img-container .image__container .overlap_text div span {
